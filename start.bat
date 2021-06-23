@@ -1,19 +1,6 @@
+@echo off
 
-cd header-project
-
-start "header Service" yarn start
-
-cd ../
-cd side-project
-
-start "side Service" yarn start
-
-cd ../
-cd footer-project
-
-start "footer Service" yarn start
-
-cd ../
-cd content-project
-
-start "content Service" yarn serve
+start cmd /k "cd header-project&&yarn start" 
+start cmd /k "cd side-project&&yarn start" 
+start cmd /k "cd footer-project&&yarn start" 
+start cmd /k "cd content-project&&yarn serve" 

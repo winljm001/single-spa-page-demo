@@ -7368,6 +7368,11 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+single-spa-vue@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.nlark.com/single-spa-vue/download/single-spa-vue-2.4.0.tgz#3137a163d160564867f4b05f88452c14552738d6"
+  integrity sha1-MTehY9FgVkhn9LBfiEUsFFUnONY=
+
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/slash/download/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -7599,6 +7604,11 @@ stackframe@^1.1.1:
   resolved "https://registry.npm.taobao.org/stackframe/download/stackframe-1.2.0.tgz#52429492d63c62eb989804c11552e3d22e779303"
   integrity sha1-UkKUktY8YuuYmATBFVLj0i53kwM=
 
+standalone-single-spa-webpack-plugin@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.nlark.com/standalone-single-spa-webpack-plugin/download/standalone-single-spa-webpack-plugin-1.2.2.tgz#cae12845d6021351dbe40a2c25fe51644ceaaa4d"
+  integrity sha1-yuEoRdYCE1Hb5AosJf5RZEzqqk0=
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "https://registry.npm.taobao.org/static-extend/download/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
@@ -7811,6 +7821,11 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+systemjs-webpack-interop@^2.3.1, systemjs-webpack-interop@^2.3.7:
+  version "2.3.7"
+  resolved "https://registry.nlark.com/systemjs-webpack-interop/download/systemjs-webpack-interop-2.3.7.tgz#b8ed2a81c371bab3160ac4801776ef61cf8c7959"
+  integrity sha1-uO0qgcNxurMWCsSAF3bvYc+MeVk=
 
 table@^5.2.3:
   version "5.4.6"
@@ -8281,6 +8296,15 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
+
+vue-cli-plugin-single-spa@~2.2.0:
+  version "2.2.0"
+  resolved "https://registry.nlark.com/vue-cli-plugin-single-spa/download/vue-cli-plugin-single-spa-2.2.0.tgz#19154ef5cd698b3893bb12f1b0b57ca9418f17e3"
+  integrity sha1-GRVO9c1piziTuxLxsLV8qUGPF+M=
+  dependencies:
+    semver "^7.3.2"
+    standalone-single-spa-webpack-plugin "^1.2.0"
+    systemjs-webpack-interop "^2.3.1"
 
 vue-eslint-parser@^7.6.0:
   version "7.6.0"
