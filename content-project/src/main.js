@@ -1,10 +1,11 @@
-import { h, createApp } from 'vue';
-import singleSpaVue from 'single-spa-vue';
+import { h, createApp } from "vue";
+import singleSpaVue from "single-spa-vue";
 
-import App from './App.vue';
+import App from "./App.vue";
 
 const vueLifecycles = singleSpaVue({
   createApp,
+  domElementGetter,
   appOptions: {
     render() {
       return h(App, {
@@ -24,3 +25,13 @@ const vueLifecycles = singleSpaVue({
 export const bootstrap = vueLifecycles.bootstrap;
 export const mount = vueLifecycles.mount;
 export const unmount = vueLifecycles.unmount;
+function domElementGetter() {
+  let el = document.getElementById("contentApp");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "contentApp";
+    document.body.appendChild(el);
+  }
+
+  return el;
+}

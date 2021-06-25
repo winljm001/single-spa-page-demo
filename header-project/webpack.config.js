@@ -1,10 +1,10 @@
-const { merge }  = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
 
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
-    orgName: "winljm001",
-    projectName: "basemicro",
+    orgName: "hj",
+    projectName: "hj",
     webpackConfigEnv,
     argv,
   });
