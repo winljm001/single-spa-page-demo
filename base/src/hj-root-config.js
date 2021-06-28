@@ -7,13 +7,23 @@ import {
 import microfrontendLayout from "./microfrontend-layout.html";
 import * as isActive from "./activityFun";
 registerApplication(
-  "content-app",
-  () => System.import("content-app"),
+  "@hj/hj",
+  () => System.import("@hj/hj"),
   isActive.contentApp
 );
 registerApplication(
-  "@hj/hj",
-  () => System.import("@hj/hj"),
+  "@hj/content-app",
+  () => System.import("@hj/content-app"),
+  isActive.contentApp
+);
+registerApplication(
+  "@hj/footer",
+  () => System.import("@hj/footer"),
+  isActive.contentApp
+);
+registerApplication(
+  "@hj/side",
+  () => System.import("@hj/side"),
   isActive.contentApp
 );
 const routes = constructRoutes(microfrontendLayout);
