@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+.main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+#side {
+  width: 200px;
+  background-color: gray;
+}
+#contentApp {
+  width: 100%;
+  flex: 1;
+}

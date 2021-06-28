@@ -6,6 +6,7 @@ import {
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
 import * as isActive from "./activityFun";
+import "./base.css";
 registerApplication(
   "@hj/hj",
   () => System.import("@hj/hj"),

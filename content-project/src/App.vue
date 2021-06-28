@@ -1,5 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <div>
+    <h1>vue应用</h1>
+    <img alt="Vue logo" src="./assets/logo.png" />
+  </div>
 </template>
 
 <script>
