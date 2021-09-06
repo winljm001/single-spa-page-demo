@@ -12,7 +12,7 @@
     "@types/react-dom": "^16.9.6"
   },
   "scripts": {
-    "start": "webpack serve --port 3013",
+    "start": "webpack serve --port 3013 --open",
     "start:standalone": "webpack serve --env standalone",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
